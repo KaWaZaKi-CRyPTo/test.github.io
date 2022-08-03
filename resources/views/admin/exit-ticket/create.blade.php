@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('exit-ticket.create')
+            @livewire('exit-ticket.edit')
         </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('vidange-controle.create')
+            @livewire('vidange-controle.edit')
         </div>
     </div>
 </div>

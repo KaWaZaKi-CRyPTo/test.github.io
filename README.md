@@ -8,10 +8,10 @@
  ## for Iseed to convert Tables to seeder classe FOR DEVELOPMENT ONLY
  1.  Run php artisan world:init - command.
  2.  Run php artisan db:seed --class=CounriesTableSeeder.
- 2.  Run php artisan db:seed --class=CitiesTableSeeder
+ 3.  Run php artisan db:seed --class=CitiesTableSeeder
 
- php artisan iseed cities,countries
- php artisan iseed cities --classnameprefix=blcts
+ 4. php artisan iseed cities,countries
+ 5. php artisan iseed cities --classnameprefix=blcts
 
 
 ## Admin credentials

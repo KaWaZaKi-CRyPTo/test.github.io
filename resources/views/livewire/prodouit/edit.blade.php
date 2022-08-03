@@ -10,24 +10,27 @@
             {{ trans('cruds.prodouit.fields.name_helper') }}
         </div>
     </div>
-    <div class="form-group {{ $errors->has('prodouit.mark') ? 'invalid' : '' }}">
-        <label class="form-label" for="mark">{{ trans('cruds.prodouit.fields.mark') }}</label>
-        <input class="form-control" type="text" name="mark" id="mark" wire:model.defer="prodouit.mark">
-        <div class="validation-message">
-            {{ $errors->first('prodouit.mark') }}
+    <div class="w-full flex flex-auto">
+        <div class="form-group w-1/2 {{ $errors->has('prodouit.mark') ? 'invalid' : '' }}">
+            <label class="form-label" for="mark">{{ trans('cruds.prodouit.fields.mark') }}</label>
+            <input class="form-control" type="text" name="mark" id="mark" wire:model.defer="prodouit.mark">
+            <div class="validation-message">
+                {{ $errors->first('prodouit.mark') }}
+            </div>
+            <div class="help-block">
+                {{ trans('cruds.prodouit.fields.mark_helper') }}
+            </div>
         </div>
-        <div class="help-block">
-            {{ trans('cruds.prodouit.fields.mark_helper') }}
-        </div>
-    </div>
-    <div class="form-group {{ $errors->has('prodouit.price') ? 'invalid' : '' }}">
-        <label class="form-label" for="price">{{ trans('cruds.prodouit.fields.price') }}</label>
-        <input class="form-control" type="number" name="price" id="price" wire:model.defer="prodouit.price" step="0.01">
-        <div class="validation-message">
-            {{ $errors->first('prodouit.price') }}
-        </div>
-        <div class="help-block">
-            {{ trans('cruds.prodouit.fields.price_helper') }}
+        <div class="form-group w-1/2 {{ $errors->has('prodouit.price') ? 'invalid' : '' }}">
+            <label class="form-label" for="price">{{ trans('cruds.prodouit.fields.price') }}</label>
+            <input class="form-control" type="number" name="price" id="price" wire:model.defer="prodouit.price"
+                step="0.01">
+            <div class="validation-message">
+                {{ $errors->first('prodouit.price') }}
+            </div>
+            <div class="help-block">
+                {{ trans('cruds.prodouit.fields.price_helper') }}
+            </div>
         </div>
     </div>
 

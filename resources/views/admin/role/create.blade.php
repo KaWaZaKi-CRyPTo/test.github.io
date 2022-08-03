@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('role.create')
+            @livewire('role.edit')
         </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('route.create')
+            @livewire('route.edit')
         </div>
     </div>
 </div>

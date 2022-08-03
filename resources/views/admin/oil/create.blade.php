@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('oil.create')
+            @livewire('oil.edit')
         </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('stock-warehouse.create')
+            @livewire('stock-warehouse.edit')
         </div>
     </div>
 </div>

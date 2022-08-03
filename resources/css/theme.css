@@ -96,11 +96,11 @@
 }
 
 .form-group {
-    @apply mt-4
+    @apply mt-4 mr-4
 }
 
 .form-group:first-of-type {
-    @apply mt-0
+    @apply mt-4 mr-4
 }
 
 .validation-message {

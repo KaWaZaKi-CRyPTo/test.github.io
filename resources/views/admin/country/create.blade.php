@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('country.create')
+            @livewire('country.edit')
         </div>
     </div>
 </div>

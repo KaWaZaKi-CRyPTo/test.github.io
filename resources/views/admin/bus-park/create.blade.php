@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('bus-park.create')
+            @livewire('bus-park.edit')
         </div>
     </div>
 </div>

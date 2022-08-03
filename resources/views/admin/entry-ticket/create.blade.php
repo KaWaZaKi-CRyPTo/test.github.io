@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('entry-ticket.create')
+            @livewire('entry-ticket.edit')
         </div>
     </div>
 </div>

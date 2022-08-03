@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('permission.create')
+            @livewire('permission.edit')
         </div>
     </div>
 </div>

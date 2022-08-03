@@ -19,6 +19,18 @@ class Edit extends Component
         $this->initListsForFields();
     }
 
+    protected function initListsForFields(): void
+    {
+        $this->listsForFields['country'] = Country::pluck('name', 'id')->toArray();
+        $this->listsForFields['city']    = City::pluck('name', 'id')->take(10)->toArray();
+    }
+
+    public function updatedBusParkCountryId($value)
+    {
+        $this->listsForFields['city'] = City::where('country_id', $value)->pluck('name', 'id')->toArray();
+        $this->busPark->city_id = null;
+    }
+
     public function render()
     {
         return view('livewire.bus-park.edit');
@@ -55,11 +67,5 @@ class Edit extends Component
                 'nullable',
             ],
         ];
-    }
-
-    protected function initListsForFields(): void
-    {
-        $this->listsForFields['country'] = Country::pluck('name', 'id')->toArray();
-        $this->listsForFields['city']    = City::pluck('name', 'id')->toArray();
     }
 }

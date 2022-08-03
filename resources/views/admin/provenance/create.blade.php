@@ -12,7 +12,7 @@
         </div>
 
         <div class="card-body">
-            @livewire('provenance.create')
+            @livewire('provenance.edit')
         </div>
     </div>
 </div>

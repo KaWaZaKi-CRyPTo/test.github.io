@@ -145,7 +145,7 @@ return [
     ],
     'bus' => [
         'title'          => 'Bus',
-        'title_singular' => 'Bu',
+        'title_singular' => 'Bus',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
